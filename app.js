@@ -26,3 +26,8 @@ let newBlog = new CreateBlog(
   "OOP یا Object Orient Programming شیوه ای از برنامه نویسی است که موجودیت‌های نرم افزار را به صورت شی یا Object می‌بیند. قبل از ظهور برنامه نویسی شی گرا ، برنامه‌ها اغلب به شکل Procedural یا رویه ای نوشته می‌شد. در برنامه نویسی رویه ای برنامه‌ها به توابع تقسیم می‌شدند. یعنی برنامه از متغیرهایی که اطلاعات را ذخیره و توابعی که عملیات مورد نظر را روی اطلاعات انجام می‌دادند تشکیل می‌شد."
 );
 console.log(newBlog);
+// Adding blog to the page
+blogTitle.insertAdjacentHTML("beforeend", `<h1>${newBlog.title}</h1>`);
+blogBody.insertAdjacentHTML("beforeend", `<p>${newBlog.body}</p>`);
+
+// newBlog.updateBlog("New Title", "New Body");
