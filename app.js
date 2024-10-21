@@ -55,3 +55,8 @@ function addComment() {
     alert("لطفا نام و کامنت خود را وارد کنید.");
   }
 }
+// Adding event listener to the submit button
+submit.addEventListener("click", (event) => {
+  event.preventDefault();
+  addComment();
+});
