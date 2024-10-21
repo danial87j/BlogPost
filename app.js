@@ -31,3 +31,15 @@ blogTitle.insertAdjacentHTML("beforeend", `<h1>${newBlog.title}</h1>`);
 blogBody.insertAdjacentHTML("beforeend", `<p>${newBlog.body}</p>`);
 
 // newBlog.updateBlog("New Title", "New Body");
+// Selecting Values from input
+
+let newComment = new Comment("Daniel", "Hello"),
+  commentName = newComment.name,
+  commentText = newComment.text;
+function showComment(commentName, commentText) {
+  let commentContainer = document.createElement("div");
+  commentContainer.innerHTML = `<p>نام : ${commentName}</p>
+    <p> ${commentText}</p>
+`;
+  commetnDiv.appendChild(commentContainer);
+}
