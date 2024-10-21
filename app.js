@@ -43,3 +43,15 @@ function showComment(commentName, commentText) {
 `;
   commetnDiv.appendChild(commentContainer);
 }
+function addComment() {
+  let nameValue = name.value;
+  let commentValue = comment.value;
+  if (nameValue && commentValue) {
+    showComment(nameValue, commentValue);
+    // Clear the inputs after adding the comment
+    name.value = "";
+    comment.value = "";
+  } else {
+    alert("لطفا نام و کامنت خود را وارد کنید.");
+  }
+}
